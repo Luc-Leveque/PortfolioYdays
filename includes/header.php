@@ -44,10 +44,10 @@
 
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="index.php?page=accueil"><span>Accueil</span></a></li>
-                    <li><a href="index.php?page=presentation"><span>Présentation</span></a></li>
-                    <li><a href="index.php?page=projets"><span>Projets</span></a></li>
-                    <li><a href="index.php?page=contact"><span>Contact</span></a></li>
+                    <li><a href="index.php?page=Accueil"><span>Accueil</span></a></li>
+                    <li><a href="index.php?page=Presentation"><span>Présentation</span></a></li>
+                    <li><a href="index.php?page=Projets"><span>Projets</span></a></li>
+                    <li><a href="index.php?page=Contact"><span>Contact</span></a></li>
                 </ul>
             </div>
 
@@ -59,7 +59,7 @@
         <div class="banner-content single-page text-center">
             <div class="banner-info">
                 <h1><?= $infos['hello_title_1'] ?></h1>
-                <p><?= $infos['hello_title_2'] ?></p>
+                <p><strong><?= $infos['hello_title_2'] ?></strong></p>
             </div>
 
         </div>

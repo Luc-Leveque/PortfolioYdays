@@ -62,18 +62,6 @@
                         
                     </div>
                     <br><br>
-                    <div class="row">
-
-                        <div class="col-sm-8">
-                            <h4>COMPÉTENCE DU PROJET</h4>
-                            <?php 
-                                while($cat = $categorie->fetch()){
-                                    echo "<p><b>" . $cat['titre'] . "</b> - <span>" . $cat['description'] . "</span></p>";
-                                }
-                            ?>
-                        </div>
-                        
-                    </div>
                 </div>
 
                 
@@ -85,7 +73,7 @@
                 <?php 
                     if(isset($_SESSION['connecte']) && !empty($_SESSION['connecte'])){
                 ?>
-                    <a href="index.php?page=modifier_projet&id=<?= $id_projet ?>" class="btn btn-direction btn-warning-filled"><i class="fa fa-pencil"></i><span>MODIFIER LE PROJET</span></a>
+                    <a href="index.php?page=modifierProjet&id=<?= $id_projet ?>" class="btn btn-direction btn-warning-filled"><i class="fa fa-pencil"></i><span>MODIFIER LE PROJET</span></a>
                     <a href="index.php?page=supprimer&type=projets&id=<?= $id_projet ?>" class="btn btn-direction btn-danger-filled pull-right"><span>SUPPRIMER LE PROJET</span><i class="fa fa-trash"></i></a>
                 <?php
                     }

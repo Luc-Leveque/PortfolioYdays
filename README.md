@@ -1,4 +1,4 @@
 Start: 
     - create Db 
-    - insert bdd.sql 
-    - config : includes/config.php
+    - insert poortfolioydays.sql 
+    - update config : includes/config.php

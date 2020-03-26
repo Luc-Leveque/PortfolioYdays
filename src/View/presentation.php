@@ -20,7 +20,7 @@ $projets = $bdd->query($projets);
             <div class="col-sm-6 about-img"><p></p></div>
             <div class="col-sm-6 col-sm-offset-6 about-description">
                 <h4>A PROPOS DE MOI</h4>
-                <?= $infos['about'] ?>
+                <?=utf8_encode($infos['about']) ?>
 
                 <h4 class="space-top">COMPÉTENCES</h4>
                 <p><strong><?= $infos['competence1'] ?></strong> <span class="pull-right"><?= $infos['level1'] ?>%</span></p>
@@ -37,13 +37,13 @@ $projets = $bdd->query($projets);
 
                 <p><strong><?= $infos['competence3'] ?></strong> <span class="pull-right"><?= $infos['level3'] ?>%</span></p>
                 <div class="progress progress-label">
-                    <div class="progress-bar progress-bar-success animated third fadeInLeft" role="progressbar" aria-valuenow="<?= $infos['level3'] ?>" aria-valuemin="0" aria-valuemax="100" <?="style=width:" . $infos['level2']."%" ?>>
+                    <div class="progress-bar progress-bar-success animated third fadeInLeft" role="progressbar" aria-valuenow="<?= $infos['level3'] ?>" aria-valuemin="0" aria-valuemax="100" <?="style=width:" . $infos['level3']."%" ?>>
                     </div>
                 </div><!-- / progress -->
 
                 <p><strong><?= $infos['competence4'] ?></strong> <span class="pull-right"><?= $infos['level4'] ?>%</span></p>
                 <div class="progress progress-label">
-                    <div class="progress-bar progress-bar-info animated fourth fadeInLeft" role="progressbar" aria-valuenow="<?= $infos['level4'] ?>" aria-valuemin="0" aria-valuemax="100" <?="style=width:" . $infos['level2']."%" ?>>
+                    <div class="progress-bar progress-bar-info animated fourth fadeInLeft" role="progressbar" aria-valuenow="<?= $infos['level4'] ?>" aria-valuemin="0" aria-valuemax="100" <?="style=width:" . $infos['level4']."%" ?>>
                     </div>
                 </div><!-- / progress -->
 
@@ -56,27 +56,13 @@ $projets = $bdd->query($projets);
         <div class="row">
 
             <!-- fact -->
-            <div class="col-sm-4 text-center">
+            <div class="col-sm-12 text-center">
                 <i class="fact-icon lnr lnr-users"></i>
                 <h3 class="timer" id="clients" data-to="<?= $nb_projects ?>" data-speed="1500"><?= $nb_projects ?></h3>
                 <h5 class="fact-title">PROJETS</h5>
             </div>
             <!-- / fact -->
 
-            <!-- fact -->
-            <div class="col-sm-4 text-center">
-                <i class="fact-icon lnr lnr-code"></i>
-                <h3 class="timer" id="projects" data-to="<?= $infos['ligne_code'] ?>" data-speed="2000"><?= $infos['ligne_code'] ?></h3>
-                <h5 class="fact-title">LIGNES DE CODES</h5>
-            </div>
-            <!-- / fact -->
-
-            <!-- fact -->
-            <div class="col-sm-4 text-center">
-                <i class="fact-icon lnr lnr-hourglass"></i>
-                <h3 class="timer" id="coffee" data-to="<?= $infos['heure_travail'] ?>" data-speed="2500"><?= $infos['heure_travail'] ?></h3>
-                <h5 class="fact-title">HEURES DE TRAVAIL</h5>
-            </div>
             <!-- / fact -->
         </div><!-- / row -->
     </section>

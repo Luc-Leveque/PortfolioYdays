@@ -19,9 +19,8 @@ $req = $bdd->query($req);
 
         <div class="row">
             <center>
-                <a href="index.php?page=ajouter_projet" class="btn btn-success">Ajouter un projet</a>
+                <a href="index.php?page=AjouterProjet" class="btn btn-success">Ajouter un projet</a>
                 <a href="index.php?page=categorie" class="btn btn-info">Gerer les catégories</a>
-                <a href="index.php?page=competence" class="btn btn-primary">Gerer les compétences</a>
             </center>
         </div>
         <br><br><br>
@@ -79,7 +78,7 @@ $req = $bdd->query($req);
         }
 
         function updatePost($id){
-            var $url = "index.php?page=modifier_projet&id=" + $id;
+            var $url = "index.php?page=modifierProjet&id=" + $id;
             document.location.href = $url;
         }
 

@@ -2,7 +2,7 @@
 
 if (!isset($_GET['page']) || $_GET['page'] == "")
 {
-    $page = "accueil";
+    $page = "Accueil";
 }
 else
 {

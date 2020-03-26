@@ -31,8 +31,8 @@ Primary use:	Portfolio
 */
 /* Base CSS */
 body {
-  color: #666666;
-  background: #fefefe;
+  color: #242424d5;
+  background: #fdf9f669;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -47,7 +47,7 @@ html, body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  color: #111111;
+  color: #0c0c0ce1;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   letter-spacing: 0.1em;

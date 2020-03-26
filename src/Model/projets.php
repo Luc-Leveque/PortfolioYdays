@@ -10,8 +10,6 @@ $req = "SELECT * FROM projet WHERE id_p = " . $id_projet;
 $req = $bdd->query($req);
 $res = $req->fetch();
 
-
-
 $directory = "images/projets/" . $res['id_p'] . "/";
 
 $file_count = 1; $exist = true;
@@ -43,8 +41,6 @@ if($res) {
     $categorie = $categorie->fetch();
     $categorie_titre = $categorie['titre'];
 
-    $categorie = "SELECT * FROM englober e, competence c WHERE e.id_comp = c.id_comp AND e.id_p = " . $res['id_p'];
-    $categorie = $bdd->query($categorie);
 }
 else {
     header('Location: index.php?page=projets');
